@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main() 
+{
+   char s[20][20],ref[10];
+   int i,j,n=0,count;
+   while(scanf("%s",s[n])==1)
+   {
+       n++;
+   }
+     for(i=0;i<n;i++)
+   {
+       for(j=i+1;j<n;j++)
+       {
+            if((strlen(s[i])==strlen(s[j]) && strcmp(s[i],s[j])>0) || strlen(s[i])>strlen(s[j])) 
+            {
+            strcpy(ref,s[i]);
+            strcpy(s[i],s[j]);
+            strcpy(s[j],ref);
+            }
+        }
+   }
+   for(i=0;i<n;i++)
+   {
+       printf(" %s ",s[i]);
+   }
+}

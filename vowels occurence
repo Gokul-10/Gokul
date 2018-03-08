@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char s[100];
+char a[5]={'a','e','i','o','u'};
+fgets(s,100,stdin);
+int i,j,n,count;
+n=strlen(s)-1;
+
+for(i=0;i<5;i++)
+{
+    count=0;
+    
+    for(j=0;j<n;j++)
+    {
+        if(tolower(s[j])==a[i])
+    {
+        count++;
+    }
+    
+    }
+    if(count!=0)
+    {
+    printf("%c--> %d\n",a[i],count);
+    }
+    
+}
+
+
+
+
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int convert_to_base(int n,int b)
+{
+	int i=0,j,arr[100],temp=0;
+    while(n > 0)
+	{
+		arr[i]=n%b;
+		i++;
+		n=n/b;
+		
+	}
+	for(j=i-1;j>=0;j--)
+	{
+	    temp=temp*10+arr[j];
+	
+	}
+	return temp;
+}
+int main()
+{
+	int num,base;
+    scanf("%d %d",&num,&base);
+	int result=convert_to_base(num,base);
+	printf("%d",result);
+}
+

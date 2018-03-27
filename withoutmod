@@ -1,15 +1,13 @@
 #include<stdio.h>
 int main()
 {
-int num,divisor=2,a,b,c;
+int num,divisor=2,a;
 scanf("%d",&num);
 int no_of_1s=0;
 while(num>0)
 {     
-    a = num / divisor;	
-	b = a * divisor;
-	c = num - b;	
-if(c==1)
+    a=(num-(num / divisor)*divisor);
+if(a==1)
     {
         no_of_1s++;
     }

@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int num,divisor=2,a,b,c;
+scanf("%d",&num);
+int no_of_1s=0;
+while(num>0)
+{     
+    a = num / divisor;	
+	b = a * divisor;
+	c = num - b;	
+if(c==1)
+    {
+        no_of_1s++;
+    }
+    num=num/2;
+}
+   printf("%d",no_of_1s);
+   
+}

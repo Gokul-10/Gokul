@@ -1,0 +1,44 @@
+#include <iostream>
+ 
+using namespace std;
+
+
+void Subset(int arr[], int s, int n,int a[]) 
+{
+int i; 
+
+if(s==n) 
+{
+	for(int j=0;j<n;j++)
+	{
+		if(arr[j]!=0)
+		{
+			cout<<a[j];
+		}
+	}
+cout<<endl;
+return; 
+} 
+
+arr[s] = 1; 
+Subset(arr, s+1, n,a); 
+arr[s] = 0; 
+Subset(arr, s+1, n,a); 
+return; 
+} 
+
+#include<stdio.h>
+int main() 
+{
+
+	int a[100],i=0;
+	while(scanf("%d",&a[i])==1)
+	{
+	    i++;
+	}
+	int n=i;
+int arr[n]={0}; 
+
+Subset(arr, 0, n,a); 
+
+}

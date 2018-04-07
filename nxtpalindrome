@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+int n;
+scanf("%d",&n);
+palindrome(n);
+}
+void palindrome(int num)
+{
+	int i,temp,rev;
+	for(i=num+1;;i++)
+	{
+		rev=0;
+		num=i;
+		while(num)
+		{
+			temp=num%10;
+			rev=temp+rev*10;
+			num=num/10;
+		}
+		if(rev==i)
+		{
+			break;
+		}
+	}
+	printf("%d",rev);
+}
+

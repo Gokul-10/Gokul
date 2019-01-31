@@ -1,0 +1,27 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+int main() 
+{ 
+int M,N; 
+scanf("%d%d",&M,&N); 
+int matrix[M][N]; 
+int row,col; 
+for(row=0; row<M; row++) 
+{ 
+for(col=0; col<N; col++) 
+{ 
+scanf("%d",&matrix[row][col]); } } 
+
+int rotatedmatrix[N][M]; 
+for(row=0; row<M; row++) 
+{ for(col=0; col<N; col++) 
+{ rotatedmatrix[N-1-col][row] = matrix[row][col]; 
+} }  
+for(row=0; row<N; row++) 
+{ for(col=0; col<M; col++) 
+{ 
+printf("%d ",rotatedmatrix[row][col]); 
+} 
+printf("\n"); 
+} 
+}

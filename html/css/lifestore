@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+    
+            </style>
+        <title>Lifestyle store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="innerheader">
+                <div class="logo">
+                    <a href="">Lifestyle store</a>
+                </div>
+                <div class="elements">
+                    <a href="">sign up</a>
+                    <a href="">login</a>
+                </div>
+            </div>
+        </div>
+        
+         <div class="content">
+             
+                    <div class="bannerimage" >
+                        <div class="innerbanimage">
+                            <div class="bannercontent">
+                                <h1>
+                                    we sell lifestyle
+                                </h1>
+                                <p>
+                                    Flat 40% OFF on premium brands
+                                </p>
+                                <a href="" class="button">shop now </a>
+                            </div>
+                        </div>
+                    </div>
+        <div class="container">
+            <div class="items">
+                <a href="#">
+                    <img src="images/camera.jpg" class="thumbnail">
+                    
+                    <div class="caption">
+                        <h2>
+                            Camera
+                            
+                        </h2>
+                        <p>
+                            best Camera here
+                        </p>
+                    </div>
+                    
+                    
+                </a>
+                
+                
+                
+            </div>
+            <div class="items">
+                <a href="#">
+                    <img src="images/watch.jpg" class="thumbnail">
+                    
+                    <div class="caption">
+                        <h2>
+                            Watches
+                            
+                        </h2>
+                        <p>
+                            best watches here
+                        </p>
+                    </div>
+                    
+                    
+                </a>
+                
+                
+                
+            </div>
+            
+            <div class="items">
+                <a href="#">
+                    <img src="images/camera.jpg" class="thumbnail">
+                    
+                    <div class="caption">
+                        <h2>
+                            shirt
+                            
+                        </h2>
+                        <p>
+                            best shirthere
+                        </p>
+                    </div>
+                    
+                    
+                </a>
+                
+                
+                
+            </div>
+            
+            
+            
+        </div>
+         </div>
+          <footer>
+        <div class="container">
+            
+            <p>
+                “Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000”.
+            </p>
+        </div>
+    </footer>
+    </body>
+  
+    
+</html>
